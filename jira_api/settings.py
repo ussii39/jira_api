@@ -81,7 +81,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'jira_api.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000'
+    'http://localhost:3000',
+    "https://my-1st-enginer.web.app/"
 ]
 
 REST_FRAMEWORK = {
@@ -106,6 +107,14 @@ DATABASES = {
   'default': env.db(),
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'jira_api',
+#         'USER': 'root',
+#         'PASSWORD': 'Tetunori0729',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
