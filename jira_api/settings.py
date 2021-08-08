@@ -82,9 +82,7 @@ WSGI_APPLICATION = 'jira_api.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
-    "https://my-1st-enginer.web.app/",
-    "https://nextjs-project-swart.vercel.app/",
-    "*"
+    "https://nextjs-project-swart.vercel.app",
 ]
 
 REST_FRAMEWORK = {
